@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "image": "./image/dota_1.jpg",
+    "price": "2540",
+    "name": "Dota 2"
+  },
+  {
+    "id": 2,
+    "image": "./image/manor.jpg",
+    "price": "1060",
+    "name": "Manor Lords"
+  },
+  {
+    "id": 3,
+    "image": "./image/stray.jpg",
+    "price": "950",
+    "name": "Stray"
+  },
+  {
+    "id": 4,
+    "image": "./image/zero.jpg",
+    "price": "2264",
+    "name": "Subnautica"
+  },
+  {
+    "id": 5,
+    "image": "./image/terraria.jpg",
+    "price": "345",
+    "name": "Terraria"
+  },
+  {
+    "id": 6,
+    "image": "./image/war.jpg",
+    "price": "1399",
+    "name": "World War"
+  },
+  {
+    "id": 7,
+    "image": "./image/raft.jpg",
+    "price": "415",
+    "name": "Raft"
+  },
+  {
+    "id": 8,
+    "image": "./image/grim.jpg",
+    "price": "1365",
+    "name": "Grim Dawn"
+  }
+]
