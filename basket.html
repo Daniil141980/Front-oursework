@@ -81,11 +81,6 @@
 <footer id="footer">
     <h1 class="text-center">DigitalDen</h1>
     <p class="text-center"></p>
-    <div class="icons text-center">
-        <i class="bx bxl-telegram"></i>
-        <i class="bx bxl-google"></i>
-        <i class="bx bxl-discord"></i>
-    </div>
     <div class="copyright text-center">
         &copy; Copyright <strong><span>Korshunov Daniil</span></strong>. All Rights Reserved
     </div>
@@ -100,9 +95,7 @@
     let total = 0;
     if (sessionStorage.getItem("1") !== null) {
         let map = JSON.parse(sessionStorage.getItem("1"))
-        for (let i = 0; i < Object.entries(map).length; i++) {
-            total += map[i].quantity;
-        }
+        total = Object.values(map).reduce((previousValue, currentValue) => previousValue + currentValue.quantity,0)
     }
     placeholder.innerHTML = `${total}`;
 
@@ -110,11 +103,9 @@
     let totalFav = 0;
     if (sessionStorage.getItem("2") !== null) {
         let map = JSON.parse(sessionStorage.getItem("2"))
-        for (let i = 0; i < Object.entries(map).length; i++) {
-            totalFav += map[i].quantity;
-        }
+        totalFav = Object.values(map).reduce((previousValue, currentValue) => previousValue + currentValue.quantity,0)
     }
-    placeholderFav.innerHTML = `${total}`;
+    placeholderFav.innerHTML = `${totalFav}`;
 </script>
 </body>
 </html>

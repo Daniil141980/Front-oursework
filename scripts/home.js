@@ -45,15 +45,14 @@ function update() {
 
 function addToCart(id) {
     let product;
-    let mapProduct = {}
-    if (sessionStorage.getItem("1") === null) {
+    let mapProduct = JSON.parse(sessionStorage.getItem("1") || "{}")
+    if (mapProduct[id] === undefined) {
         product = {id: id, name: data[id].name, price: data[id].price, image: data[id].image, quantity: 1}
         mapProduct[id] = product
         sessionStorage.setItem("1", JSON.stringify(mapProduct))
     } else {
-        let productMap = JSON.parse(sessionStorage.getItem("1"))
-        productMap[id].quantity++
-        sessionStorage.setItem("1", JSON.stringify(productMap))
+        mapProduct[id].quantity++
+        sessionStorage.setItem("1", JSON.stringify(mapProduct))
     }
 
     // updating count of products in header
@@ -61,24 +60,21 @@ function addToCart(id) {
     let total = 0;
     if (sessionStorage.getItem("1") !== null) {
         let map = JSON.parse(sessionStorage.getItem("1"))
-        for (let i = 0; i < Object.entries(map).length; i++) {
-            total += map[i].quantity;
-        }
+        total = Object.values(map).reduce((previousValue, currentValue) => previousValue + currentValue.quantity,0)
     }
     placeholder.innerHTML = `${total}`;
 }
 
 function addToFavorites(id) {
     let product;
-    let mapProduct = {}
-    if (sessionStorage.getItem("2") === null) {
+    let mapProduct = JSON.parse(sessionStorage.getItem("2") || "{}")
+    if (mapProduct[id] === undefined) {
         product = {id: id, name: data[id].name, price: data[id].price, image: data[id].image, quantity: 1}
         mapProduct[id] = product
         sessionStorage.setItem("2", JSON.stringify(mapProduct))
     } else {
-        let productMap = JSON.parse(sessionStorage.getItem("2"))
-        productMap[id].quantity++
-        sessionStorage.setItem("2", JSON.stringify(productMap))
+        mapProduct[id].quantity++
+        sessionStorage.setItem("2", JSON.stringify(mapProduct))
     }
 
     // updating count of products in header
@@ -86,9 +82,7 @@ function addToFavorites(id) {
     let total = 0;
     if (sessionStorage.getItem("2") !== null) {
         let map = JSON.parse(sessionStorage.getItem("2"))
-        for (let i = 0; i < Object.entries(map).length; i++) {
-            total += map[i].quantity;
-        }
+        total = Object.values(map).reduce((previousValue, currentValue) => previousValue + currentValue.quantity,0)
     }
     placeholder.innerHTML = `${total}`;
 }
