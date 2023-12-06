@@ -16,11 +16,10 @@ function update() {
         product = data[i-1];
         out += `<div class="col-lg-3 col-md-6 col-sm-12 py-3">
                             <div class="card" id="tpc">
-                                <img src='${product.image}' alt="" class="card image-top" height="250px">
+                                <a href="game_page.html?id=${product.id - 1}"><img src='${product.image}' alt="" class="card image-top" height="250px" ></a>
                                 <div class="card-body">
                                     <h3 class="card-titel text-center">${product.name}</h3>
                                     <p class="card-text text-center">$${product.price}</p>
-                                    <div id="btn3"><a href="product_card.html?id=${product.id - 1}"><button>About</button></a></div>
                                     <div id="btn3" onclick="addToCart(${product.id - 1})"><a><button>Add to card</button></a></div>
                                     <div class="btn3" onclick="addToFavorites(${product.id - 1})">
                                         <span style="font-size: 30px; cursor: pointer;">❤</span>
@@ -71,9 +70,6 @@ function addToFavorites(id) {
     if (mapProduct[id] === undefined) {
         product = {id: id, name: data[id].name, price: data[id].price, image: data[id].image, quantity: 1}
         mapProduct[id] = product
-        sessionStorage.setItem("2", JSON.stringify(mapProduct))
-    } else {
-        mapProduct[id].quantity++
         sessionStorage.setItem("2", JSON.stringify(mapProduct))
     }
 
@@ -166,11 +162,10 @@ fetch("./data/products.json")
             jsonProducts.push(product)
             out += `<div class="col-lg-3 col-md-6 col-sm-12 py-3">
                             <div class="card" id="tpc">
-                                <img src='${product.image}' alt="" class="card image-top" height="250px">
+                                <a href="game_page.html?id=${product.id - 1}"><img src='${product.image}' alt="" class="card image-top" height="250px" ></a>
                                 <div class="card-body">
                                     <h3 class="card-titel text-center">${product.name}</h3>
                                     <p class="card-text text-center">$${product.price}</p>
-                                    <div id="btn3"><a href="product_card.html?id=${product.id-1}"><button>About</button></a></div>
                                     <div id="btn3" onclick="addToCart(${product.id-1})"><a><button>Add to cart</button></a></div>
                                     <div class="btn3" onclick="addToFavorites(${product.id - 1})">
                                         <span style="font-size: 30px; cursor: pointer;">❤</span>

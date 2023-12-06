@@ -147,7 +147,7 @@ body {
     max-width: 350px;
     margin: -10px auto;
     border-radius: 10px;
-    background-color: rgba(216, 159, 95, 0.8) !important;
+    background-image: url('../image/background_card.gif'); !important;
     overflow: hidden;
 }
 

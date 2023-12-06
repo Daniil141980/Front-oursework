@@ -3,26 +3,21 @@ function update() {
     let out = "";
     let total = 0;
     let totalCost = 0;
-    // iterate localStorage
-    for (let i = 0; i < sessionStorage.length; i++) {
-
-        // set iteration key name
-        let key = sessionStorage.key(i);
-
-        // use key name to retrieve the corresponding value
-        let product = JSON.parse(sessionStorage.getItem(key));
+    let mapProduct = JSON.parse(sessionStorage.getItem("1") || "{}")
+    Object.keys(mapProduct).forEach((element) => {
+        let product = mapProduct[element];
 
         total += product.quantity;
         totalCost += product.quantity * product.price;
 
         out += `<div class="shopping-cart-item">
-                        <img src=${product.image} width="150px" height="150px" class="shopping-cart-item-image">
+                        <img src=${product.image} width="240px" height="135px" class="shopping-cart-item-image">
                         <div class="shopping-cart-data">
                             <h3 class="shopping-cart-item-name">${product.name}</h3>
                             <div class="shopping-cart-counter">
                                 <div id="btn5"><button onclick="incrementCount(${product.id})">+</button></div>
                                 <h4 class="shopping-cart-item-quantity">${product.quantity}</h4>
-                                <div id="btn5" onclick="decrementCount(${product.id})"><button>-</button></div>
+                                <div id="btn5"><button onclick="decrementCount(${product.id})">-</button></div>
                             </div>
                             <div class="shopping-cart-total-price-item">
                                 <h4>Cost:</h4>
@@ -30,7 +25,7 @@ function update() {
                             </div>
                         </div>
                     </div>`;
-    }
+    })
 
     if (totalCost !== 0) {
         out += `<div class="cart-total-cost">
@@ -46,20 +41,23 @@ function update() {
 }
 
 function decrementCount(id) {
-    let product = JSON.parse(sessionStorage.getItem(String(id)));
+    let mapProduct = JSON.parse(sessionStorage.getItem("1"))
+    let product = mapProduct[id];
     product.quantity--;
     if (product.quantity === 0) {
-        sessionStorage.removeItem(String(id));
+        delete mapProduct[id]
+        sessionStorage.setItem("1", JSON.stringify(mapProduct))
     } else {
-        sessionStorage.setItem(String(id), JSON.stringify(product))
+        sessionStorage.setItem("1", JSON.stringify(mapProduct))
     }
     update();
 }
 
 function incrementCount(id) {
-    let product = JSON.parse(sessionStorage.getItem(String(id)));
+    let mapProduct = JSON.parse(sessionStorage.getItem("1"))
+    let product = mapProduct[id];
     product.quantity++;
-    sessionStorage.setItem(String(id), JSON.stringify(product))
+    sessionStorage.setItem("1", JSON.stringify(mapProduct))
     update();
 }
 
@@ -71,18 +69,14 @@ fetch("./data/products.json")
         let placeholder = document.querySelector("#data-output");
         let out = "";
         let totalCost = 0;
-        // iterate localStorage
-        for (let i = 0; i < sessionStorage.length; i++) {
+        let mapProduct = JSON.parse(sessionStorage.getItem("1") || "{}")
+        Object.keys(mapProduct).forEach((element) => {
+            let product = mapProduct[element];
 
-            // set iteration key name
-            let key = sessionStorage.key(i);
-
-            // use key name to retrieve the corresponding value
-            let product = JSON.parse(sessionStorage.getItem(key));
             totalCost += product.quantity * product.price;
 
             out += `<div class="shopping-cart-item">
-                        <img src=${product.image} width="150px" height="150px" class="shopping-cart-item-image">
+                        <img src=${product.image} width="240px" height="135px" class="shopping-cart-item-image">
                         <div class="shopping-cart-data">
                             <h3 class="shopping-cart-item-name">${product.name}</h3>
                             <div class="shopping-cart-counter">
@@ -96,7 +90,7 @@ fetch("./data/products.json")
                             </div>
                         </div>
                     </div>`;
-        }
+        })
 
         if (totalCost !== 0) {
             out += `<div class="cart-total-cost">
