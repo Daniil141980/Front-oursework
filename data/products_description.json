@@ -11,7 +11,7 @@
   {
     "id": 2,
     "image": [
-      "./image/card2.png"
+      "./image/manor_2.jpg"
     ],
     "description": "Manor Lords — это стратегия, в которой каждый сможет почувствовать себя настоящим средневековым лордом. Развивайте свою стартовую деревню и превратите ее в большой шумный город, управляйте ресурсами и производственными цепочками и захватывайте новые земли. </br> Беря за основу франконскую живопись и архитектуру конца XIV века, Manor Lords старается во всем соблюдать историческую достоверность — как в игровых механиках, так и во внешнем оформлении. Привычные средневековые образы, ставшие клише, уступают здесь место исторической точности — все ради того, чтобы сделать мир игры более реалистичным, красочным и правдоподобным.",
     "rating": 5
@@ -19,7 +19,9 @@
   {
     "id": 3,
     "image": [
-      "./image/card3.png"
+      "./image/stray_2.jpg",
+      "./image/stray_3.jpg"
+
     ],
     "description": "Stray – приключенческая игра от третьего лица, действие которой разворачивается на неоновых улочках и в угрюмых, грязных подворотнях гибнущего кибергорода. Блуждайте по подвалам и крышам, защищайтесь от неожиданных угроз и распутывайте загадки этого неприветливого места, где нет никого, кроме безучастных дроидов и опасных тварей.</br> Посмотрите на мир глазами бродячего кота и взаимодействуйте с окружением самыми причудливыми способами. При встрече со странными обитателями этого чуждого мира вам предстоит быть незаметным, проворным, неблагоразумным, а порой и надоедливым.</br>По пути ваш кот подружится с маленьким летающим дроном B-12. С помощью новообретенного друга вы непременно найдете выход из города.</br> Игру Stray разработала BlueTwelve Studio – небольшая команда с юга Франции, состоящая главным образом из котов и нескольких людей в придачу.",
     "rating": 3
@@ -27,9 +29,8 @@
   {
     "id": 4,
     "image": [
-      "./image/comp_chair1.webp",
-      "./image/comp_chair3.webp",
-      "./image/comp_chair4.webp"
+      "./image/zero_2.jpg",
+      "./image/zero_3.jpg"
     ],
     "description":"'Subnautica: Below Zero' развивает концепцию оригинальной игры, перенося игроков в мрачный и холодный регион планеты 4546B. Вам предстоит взять на себя роль Робина Гудалл, исследовательницы, которая прибывает на планету, чтобы раскрыть тайны, связанные с исчезновением своей сестры.</br>Вам предстоит исследовать ледяные биомы, глубокие океанские пропасти, подводные пещеры и ледяные плато, сталкиваясь с уникальными формами жизни и решая головоломки. Ключевым элементом является выживание в условиях экстремальных температур и опасных подводных обитателей.</br>Особенности:</br> 1. Ледяной подводный мир: Исследуйте удивительные и опасные подводные локации в холодном регионе планеты.</br> 2. Интригующий сюжет: Раскройте тайны, связанные с исчезновением сестры Робина и исследуйте загадочные артефакты.</br> 3. Выживание: Сталкивайтесь с экстремальными температурами, подводными течениями и опасными хищниками в борьбе за выживание.</br> 4. Исследование и крафтинг: Собирайте ресурсы, создавайте снаряжение и улучшайте свою базу для более эффективной выживалки.",
     "rating": 4
@@ -37,33 +38,35 @@
   {
     "id": 5,
     "image": [
-      "./image/coffee_table_1.png"
+      "./image/terraria_2.jpg",
+      "./image/terraria_3.jpg"
     ],
-    "description": "Elevate Your Living Space with Our Coffee Table<br/><br/>Introducing our Coffee Table, a statement piece that seamlessly combines style and functionality to enhance your living area. This table is designed to be the centerpiece of your space, providing a perfect balance of form and utility. Our carefully curated collection features a range of designs, from modern and chic to timeless classics, ensuring that there's a Coffee Table to suit your unique taste.<br/><br/>Immerse yourself in the exquisite craftsmanship and versatility of our Coffee Table, crafted with precision and attention to detail. Whether you prefer the clean lines of contemporary design or the enduring appeal of traditional craftsmanship, our tables are designed to elevate your decor.",
+    "description": "Terraria - это пиксельная 'песочница', смешивающая Minecraft и приключенческую ролевую игру. Игроки вольны исследовать большой, процедурно генерируемый двухмерный мир, добывать ресурсы, строить здания, искать мощную экипировку и сражаться с разнообразными противниками и угрозами. Игра предлагает множество различных испытаний, среди которых - свирепые боссы, 'волны' разнообразных тематических противников и многое другое. </br>В Terraria можно играть как в одиночку, так и в кооперативе, что существенно повышает шансы на успех. Тем не менее, все зависит исключительно от стиля игры конкретного игрока - кому-то может быть интересно исследование мира и выполнение заданий, вроде убийства боссов, а кому-то будет интереснее строить замки и заниматься ловлей рыбы. Terraria дарит игрокам огромное количество возможностей, но как и любая настоящая 'песочница' она предлагает игроку самому выбирать, чем именно он будет заниматься и от чего он будет получать удовольствие. ",
     "rating": 2
   },
   {
     "id": 6,
     "image": [
-      "./image/card6.png"
+      "./image/war_2.jpg",
+      "./image/war_3.jpg"
     ],
-    "description": "Contemporary Comfort, Sleek Design: Our Modern Sofa<br/><br/>Introducing our Modern Sofa, where comfort meets cutting-edge design. This sofa is a testament to modern aesthetics and functionality, curated to enhance the style of your living space. Our carefully selected collection features a range of designs, from minimalist and sleek to bold and artistic, ensuring there's a Modern Sofa to complement your unique taste.<br/><br/>Immerse yourself in the luxurious comfort and chic design of our Modern Sofa, meticulously crafted with the latest trends in mind. Whether you prefer the clean lines of contemporary simplicity or the bold statements of modern artistry, our sofas are designed to be the focal point of your modern living room.<br/><br/>Elevate your relaxation experience as our Modern Sofa seamlessly integrates into various interiors. Choose from a variety of sizes, fabrics, and finishes to tailor your sofa to your personal style. Redefine your living space with the perfect blend of comfort and modern flair—because contemporary living deserves a sofa that reflects your distinctive taste.",
+    "description": "World War Z — это напряженный боевик для совместного прохождения с видом от третьего лица, в котором игрокам (до 4 человек) предстоит сражаться с сотнями зомби. Игра создана по мотивам блокбастера Paramount Pictures и покорила сердца уже более 20 миллионов игроков. В World War Z вас ждет динамичный игровой процесс и сюжет, действие которого разворачивается в самых разных уголках земного шара.<br/>Человечество оказалось на грани уничтожения. Зомби уже захватили Нью-Йорк, Москву, Иерусалим, Японию и многие другие регионы по всему миру. Но перед лицом страшной опасности те, кому удалось выжить в боях, объединяются, чтобы дать отпор орде зомби и пережить ходячих мертвецов.",
     "rating": 3
   },
   {
     "id": 7,
     "image": [
-      "./image/yellow_chair_1.png"
+      "./image/raft.jpg"
     ],
-    "description": "Sophisticated Style, Brilliant Comfort: Our Modern Chair in Stunning Yellow<br/><br/>Introducing our Modern Chair, a stylish masterpiece that effortlessly combines modern design with the vibrant allure of a beautiful yellow hue. This chair is a celebration of contemporary aesthetics and ergonomic comfort, carefully curated to elevate the visual appeal of your space. Our thoughtfully chosen collection features a variety of designs, from sleek and chic to bold and vibrant, ensuring there's a Modern Chair to suit your unique style.<br/><br/>Immerse yourself in the luxurious comfort and eye-catching design of our Modern Chair, meticulously crafted to be the focal point of any room. Whether you're drawn to the clean lines of contemporary simplicity or the bold statements of modern artistry, our chairs are designed to make a statement.<br/><br/>Enhance your living space with the radiant charm of our Modern Chair, seamlessly integrating into various interiors. Choose from a range of sizes, fabrics, and finishes to customize your chair and infuse your space with the perfect blend of comfort and modern vibrancy—because contemporary living deserves a chair as unique and stunning as you.",
+    "description": "Погрузитесь в эпическое океанское приключение с Raft: The Final Chapter, игрой на выживание от Redbeet Interactive. Начиная с небольшого плота с помощью всего лишь пластикового крюка, игроки должны собирать ресурсы, отбиваться от акул и исследовать опасные острова. От крафта и строительства до исследований и навигации предстоит многое сделать. eXputer предлагает лучшие руководства, списки уровней, исправления ошибок и настройки, которые помогут вам справиться с трудностями Raft: The Final Chapter и преодолеть опасности океана!",
     "rating": 5
   },
   {
     "id": 8,
     "image": [
-      "./image/glass_table_1.png"
+      "./image/grim_2.jpg"
     ],
-    "description":"Elevate Your Space with Elegance: Our Glass Table<br/><br/>Introducing our Glass Table, a statement of sophistication that brings an air of timeless elegance to your living area. This table is designed to be a captivating centerpiece, seamlessly blending modern aesthetics with the transparency and luminosity of glass. Our carefully curated collection features a range of designs, from sleek and minimalist to intricate and artistic, ensuring there's a Glass Table to complement your distinct style.<br/><br/>Immerse yourself in the exquisite craftsmanship and versatility of our Glass Table, where form meets function. Whether you prefer the clean lines of contemporary design or the intricate details of artistic expression, our tables are crafted to enhance the visual appeal of your space.<br/><br/>Transform your living experience as our Glass Table seamlessly integrates into various settings. Choose from different shapes, sizes, and bases to match your interior design. Redefine your space with the perfect blend of sophistication and practicality—because a well-crafted glass table is not just furniture; it's a reflection of your refined taste.",
+    "description":"Grim Dawn, в переводе на русский Мрачный Рассвет – игра, созданная для ПК и распространяемая по цифровым каналам. </br> Grim Dawn – это ролевая игра для персональных компьютеров, которую создают ветераны компании Iron Lore Entertainment, создатели игры Titan Quest. Действие игры разворачивается в мрачном фантастическом мире, созданным отчасти под впечатлением от викторианской эпохи. Мрачный Рассвет разрабатывается на основе тех же инструментов и технологий, с помощью которых создавался Titan Quest.",
     "rating": 4
   }
 ]
