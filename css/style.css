@@ -1,8 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-
-    box-sizing: border-box;
     
 }
 body {
@@ -10,7 +8,6 @@ body {
     z-index: 1;
     background-image: url('../image/fon.gif');
     background-position: center;
-    
 }
 
 
@@ -268,8 +265,7 @@ body {
 #footer {
     width: 100%;
     background-color: #333333;
-    margin-top: 200px;
-
+    margin-top: 320px;
 }
 
 #footer h1 {
@@ -328,7 +324,7 @@ body {
     .carousel-image {
         width: 350px;
         height: 350px;
-
+        
     }
 }
 
@@ -337,7 +333,7 @@ body {
     max-width: 500px;
     position: relative;
     margin: auto;
-
+    
 }
 
 
@@ -479,8 +475,6 @@ body {
 .rating-result > span.active {
     color: gold;
     background-color: transparent;
-    
-   
 }
 
 .shopping-cart {
@@ -488,7 +482,6 @@ body {
     margin: 50px;
     min-height: calc(100vh - 600px);
 }
-
 
 .shopping-cart-item {
     margin-left: auto;
@@ -510,7 +503,6 @@ body {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 10px;
-
 }
 
 .shopping-cart-item .shopping-cart-item-price {
@@ -522,11 +514,6 @@ body {
     margin-top: auto;
     margin-bottom: auto;
 }
-
-
-
-
-
 
 .favorites {
     flex-direction: column;
@@ -549,26 +536,6 @@ body {
     position: relative;
 }
 
-.favorites-item .favorites-item-name {
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 10px;
-}
-
-.favorites-item .favorites-item-price {
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-.favorites-item .favorites-item-quantity {
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-
-
-
-
 
 #btn5 {
     text-align: center;
@@ -588,7 +555,6 @@ body {
     border-radius: 50%;
     margin-left: 10px;
     margin-right: 10px;
-
 }
 
 #btn5 button:hover {
