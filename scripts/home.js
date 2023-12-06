@@ -19,10 +19,10 @@ function update() {
                                 <a href="game_page.html?id=${product.id - 1}"><img src='${product.image}' alt="" class="card image-top" height="250px" ></a>
                                 <div class="card-body">
                                     <h3 class="card-titel text-center">${product.name}</h3>
-                                    <p class="card-text text-center">$${product.price}</p>
-                                    <div id="btn3" onclick="addToCart(${product.id - 1})"><a><button>Add to card</button></a></div>
+                                    <p class="card-text text-center">${product.price} р.</p>
+                                    <div id="btn3" onclick="addToCart(${product.id - 1})"><a><button>В корзину</button></a></div>
                                     <div class="btn3" onclick="addToFavorites(${product.id - 1})">
-                                        <span style="font-size: 30px; cursor: pointer;">❤</span>
+                                        <span style="font-size: 30px; cursor: pointer❤️</span>
                                     </div>
                                 </div>
                             </div>
@@ -71,6 +71,7 @@ function addToFavorites(id) {
         product = {id: id, name: data[id].name, price: data[id].price, image: data[id].image, quantity: 1}
         mapProduct[id] = product
         sessionStorage.setItem("2", JSON.stringify(mapProduct))
+
     }
 
     // updating count of products in header
@@ -79,9 +80,12 @@ function addToFavorites(id) {
     if (sessionStorage.getItem("2") !== null) {
         let map = JSON.parse(sessionStorage.getItem("2"))
         total = Object.values(map).reduce((previousValue, currentValue) => previousValue + currentValue.quantity,0)
+
     }
     placeholder.innerHTML = `${total}`;
+
 }
+
 
 document.addEventListener('DOMContentLoaded', function () {
     const dropdown = document.getElementById('dropdown');
@@ -165,10 +169,10 @@ fetch("./data/products.json")
                                 <a href="game_page.html?id=${product.id - 1}"><img src='${product.image}' alt="" class="card image-top" height="250px" ></a>
                                 <div class="card-body">
                                     <h3 class="card-titel text-center">${product.name}</h3>
-                                    <p class="card-text text-center">$${product.price}</p>
-                                    <div id="btn3" onclick="addToCart(${product.id-1})"><a><button>Add to cart</button></a></div>
+                                    <p class="card-text text-center">${product.price} р.</p>
+                                    <div id="btn3" onclick="addToCart(${product.id-1})"><a><button>В корзину</button></a></div>
                                     <div class="btn3" onclick="addToFavorites(${product.id - 1})">
-                                        <span style="font-size: 30px; cursor: pointer;">❤</span>
+                                        <span style="font-size: 30px; cursor: pointer;">❤️</span>
                                     </div>
                                 </div>
                             </div>

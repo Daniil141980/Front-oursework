@@ -20,13 +20,11 @@ function update() {
         <img src='${product.image}' alt="" class="card image-top" height="350px">
         <div class="card-body">
             <h3 class="card-titel text-center">${product.name}</h3>
-            <p class="card-text text-center">$${product.price}</p>
-            <div class="btn3">
-                <a href="product_card.html?id=${product.id - 1}"><button>About</button></a>
-            </div>
-            <div class="btn3" onclick="addToCart(${product.id - 1})"><a><button>Add to cart</button></a></div>
-            <div class="btn3" onclick="addToFavorites(${product.id - 1})">
+            <p class="card-text text-center">${product.price} ₽</p>
+             <div class="btn3" onclick="addToFavorites(${product.id - 1})">
             <span style="font-size: 30px; cursor: pointer;">❤</span>
+            <div class="btn3" onclick="addToCart(${product.id - 1})"><a><button>Добавить в корзину</button></a></div>
+           
         </div>
         </div>
     </div>
@@ -183,13 +181,12 @@ fetch("./data/products.json")
                             <div class="card" id="tpc">
                                 <img src='${product.image}' alt="" class="card image-top" height="250px">
                                 <div class="card-body">
-                                <div class="btn3" onclick="addToFavorites(${product.id - 1})">
-            <span style="font-size: 30px; cursor: pointer;">❤</span>
-        </div>
                                     <h3 class="card-titel text-center">${product.name}</h3>
                                     <p class="card-text text-center">$${product.price}</p>
-                                    <div id="btn3"><a href="product_card.html?id=${product.id-1}"><button>About</button></a></div>
-                                    <div id="btn3" onclick="addToCart(${product.id-1})"><a><button>Add to cart</button></a></div>
+                                    <div class="btn3" onclick="addToFavorites(${product.id - 1})">
+                                    <span style="font-size: 30px; cursor: pointer;">❤</span>
+                                  </div>
+                                    <div id="btn3" onclick="addToCart(${product.id-1})"><a><button>Добавить в корзину</button></a></div>
                                     
                                 </div>
                             </div>

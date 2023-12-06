@@ -67,21 +67,21 @@
 <div class="wrapper">
     <div class="container">
         <h3 class="text-center" style="margin-top: 50px;color: rgb(106, 238, 219);">НАШИ ИГРЫ</h3>
-        <div class="filter-opener-btn"><a><button id="filter-opener">Filters</button></a></div>
+        <div class="filter-opener-btn"><a><button id="filter-opener">Фильтры</button></a></div>
 
         <div class="filter-container" id="filt-cont">
             <div class="mb-3">
-                <label for="minValue" class="form-label">Min price</label>
-                <input type="text" class="form-control" id="minValue" placeholder="Input min price of game">
+                <label for="minValue" class="form-label">Минимальная цена</label>
+                <input type="text" class="form-control" id="minValue" placeholder="Введите минимальную цену">
             </div>
             <div class="mb-3">
-                <label for="maxValue" class="form-label">Max price</label>
-                <input type="text" class="form-control" id="maxValue" placeholder="Input max price of game">
+                <label for="maxValue" class="form-label">Максимальная цена</label>
+                <input type="text" class="form-control" id="maxValue" placeholder="Введите максимальную цену">
             </div>
 
             <div class="col-15">
-                <div class="filter-opener-btn " onclick="filterByPrice()"><a><button>Apply</button></a></div>
-                <div class="filter-opener-btn" onclick="resetFilter()"><a><button>Reset</button></a></div>
+                <div class="filter-opener-btn " onclick="filterByPrice()"><a><button>Применить</button></a></div>
+                <div class="filter-opener-btn" onclick="resetFilter()"><a><button>Сбросить</button></a></div>
             </div>
 
             <div class="dropdown" id="dropdown">
@@ -91,12 +91,12 @@
                         -ms-user-select: none;
                         -o-user-select: none;
                         user-select: none;">
-                    <h5>Sort ⇅</h5>
+                    <h5>Сортировать по ⇅</h5>
                 </span>
                 <div class="dropdown-content">
-                    <div class="btn10" onclick="sortAscending()">By ascending ↑</div>
-                    <div class="btn10" onclick="sortDescending()">By descending ↓</div>
-                    <div class="btn10" onclick="cancelSorting()">Default order</div>
+                    <div class="btn10" onclick="sortAscending()">Возрастанию ↑</div>
+                    <div class="btn10" onclick="sortDescending()">Убыванию ↓</div>
+                    <div class="btn10" onclick="cancelSorting()">По умолчанию</div>
                 </div>
             </div>
         </div>

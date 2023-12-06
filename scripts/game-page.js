@@ -106,7 +106,7 @@ fetch("./data/products.json")
                     <!-- carousel text -->
                     <div class="carousel-text">
                         <h3 class="card-titel text-center">${products[id].name}</h3>
-                        <p class="card-text text-center">$${products[id].price}</p>
+                        <p class="card-text text-center">${products[id].price} р.</p>
                         <div>${product_info[id].description}</div>
                     </div>
                     <!-- carousel text -->

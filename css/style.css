@@ -30,7 +30,7 @@ body {
 }
 
 .social-link i img:hover {
-    background-color: rgb(106, 238, 219);
+    background-color: #69ECD9;
     border-radius: 50px;
 }
 
@@ -63,7 +63,7 @@ body {
 }
 
 .icons i img:hover {
-    background-color: rgb(106, 238, 219);
+    background-color:#69ECD9;
     border-radius: 10px;
 }
 
@@ -92,7 +92,7 @@ body {
 .nav-link {
     margin-left: 30px;
     font-weight: bold;
-    color: rgb(106, 238, 219);
+    color: #69ECD9;
     transition: 0.5s ease;
     cursor: pointer;
     
@@ -129,7 +129,7 @@ body {
 }
 
 #btn1 button:hover {
-    background-color: rgb(106, 238, 219);
+    background-color: #69ECD9;
 }
 
 @media screen and (max-width: 420px) {
@@ -170,7 +170,7 @@ body {
 }
 
 #btn2 button:hover {
-    background-color: rgb(106, 238, 219);
+    background-color: #69ECD9;
 }
 
 /* card1 */
@@ -222,7 +222,7 @@ body {
 #btn3 button {
    
     width: 150px;
-    height: 30px;
+    height: 40px;
     background: rgba(255,255,240, 0.5);
     border: 2px solid white;
     border-radius: 5px;
@@ -232,7 +232,7 @@ body {
 }
 
 #btn3 button:hover {
-    background-color: rgb(106, 238, 219);
+    background-color: #69ECD9;
 }
 
 @media screen and (max-width: 990px) {
@@ -261,7 +261,7 @@ body {
 }
 
 #btn4 button:hover {
-    background-color: rgb(106, 238, 219);
+    background-color: #69ECD9;
 }
 
 /* footer */
@@ -269,6 +269,7 @@ body {
     width: 100%;
     background-color: #333333;
     margin-top: 200px;
+
 }
 
 #footer h1 {
@@ -285,7 +286,7 @@ body {
 }
 
 .icons i {
-    color: rgb(106, 238, 219);
+    color: #69ECD9;
     font-size: 30px;
     cursor: pointer;
 }
@@ -311,18 +312,23 @@ body {
     min-width: 300px;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 100px;
+    color: #69ECD9;
 }
 
 .carousel-image {
     height: 500px;
     width: 500px;
+    border-radius: 5%;
+
+
 }
 
 @media screen and (max-width: 550px) {
     .carousel-image {
         width: 350px;
         height: 350px;
-        
+
     }
 }
 
@@ -331,7 +337,7 @@ body {
     max-width: 500px;
     position: relative;
     margin: auto;
-    
+
 }
 
 
@@ -419,6 +425,9 @@ body {
 .carousel-text {
     margin-left: 3em;
     max-width: 500px;
+    color: #69ECD9;
+
+
 }
 
 .product-container {
@@ -433,7 +442,7 @@ body {
 }
 
 @media screen and (max-width: 1100px) {
-    .product-d {
+    .product-container {
         flex-direction: column;
     }
 
@@ -480,42 +489,6 @@ body {
     min-height: calc(100vh - 600px);
 }
 
-.shopping-cart-item {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-    max-width: 1200px;
-    display: flex;
-    flex-direction: row;
-    padding: 20px;
-    border-style: solid;
-    border-color: #717171;
-    border-radius: 8px;
-    box-shadow: #bbbbbb;
-    position: relative;
-}
-
-.shopping-cart-item .shopping-cart-item-name {
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 10px;
-}
-
-.shopping-cart-item .shopping-cart-item-price {
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-.shopping-cart-item .shopping-cart-item-quantity {
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-.shopping-cart {
-    flex-direction: column;
-    margin: 50px;
-    min-height: calc(100vh - 600px);
-}
 
 .shopping-cart-item {
     margin-left: auto;
@@ -526,16 +499,18 @@ body {
     flex-direction: row;
     padding: 20px;
     border-style: solid;
-    border-color: #717171;
+    border-color: #69ECD9 !important;
     border-radius: 8px;
     box-shadow: #bbbbbb;
     position: relative;
+    color: #69ECD9;
 }
 
 .shopping-cart-item .shopping-cart-item-name {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 10px;
+
 }
 
 .shopping-cart-item .shopping-cart-item-price {
@@ -604,7 +579,8 @@ body {
     width: 30px;
     height: 30px;
     background: transparent;
-    border: 1px solid black;
+    border: 1px solid #69ECD9 !important;
+    color:#69ECD9;
     transition: 0.5s ease;
     cursor: pointer;
     position: relative;
@@ -612,10 +588,11 @@ body {
     border-radius: 50%;
     margin-left: 10px;
     margin-right: 10px;
+
 }
 
 #btn5 button:hover {
-    background-color: rgb(106, 238, 219);
+    background-color: #69ECD9;
 }
 
 .shopping-cart-counter {
@@ -671,6 +648,7 @@ body {
     z-index: 1;
     margin-bottom: 10px;
     column-gap: 100px;
+    color: #333333;
 }
 
 .dropdown-content.show {
@@ -692,7 +670,7 @@ body {
 }
 
 #btn10 button:hover {
-    background-color: rgb(106, 238, 219);
+    background-color: #69ECD9;
 }
 
 @media screen and (max-width: 895px) {
@@ -717,7 +695,7 @@ body {
 .filter-opener-btn button {
     width: 100px;
     height: 30px;
-    background:aqua;
+    background:#69ECD9;
     border: 3px solid white;
     border-radius: 5px;
     transition: 0.5s ease;
@@ -726,7 +704,7 @@ body {
 }
 
 .filter-opener-btn button:hover {
-    background-color: rgb(106, 238, 219);
+    background-color:cyan;
 }
 
 @media screen and (max-width: 895px) {
@@ -737,6 +715,7 @@ body {
 
 .filter-container {
     display: none;
+    color:#69ECD9;
 }
 
 .filter-container.show {
@@ -766,6 +745,7 @@ body {
     margin-right: auto;
     max-width: 1200px;
     position: relative;
+    color: #69ECD9;
 }
 
 @media screen and (max-width: 520px) {

@@ -13,7 +13,7 @@ function update() {
                         <div class="shopping-cart-data">
                             <h3 class="shopping-cart-item-name">${product.name}</h3>
                             <div class="shopping-cart-counter">
-                                <div id="btn5"><button onclick="decrementCount(${product.id})">-</button></div>
+                                <div id="btn5"><button onclick="decrementCount(${product.id})">❤️</button></div>
                             </div>
                             <div class="shopping-cart-total-price-item">
                                 <h4>Cost:</h4>
@@ -62,7 +62,7 @@ fetch("./data/products.json")
                         <div class="shopping-cart-data">
                             <h3 class="shopping-cart-item-name">${product.name}</h3>
                             <div class="shopping-cart-counter">
-                                <div id="btn5"><button onclick="decrementCount(${product.id})">-</button></div>
+                                <div id="btn5"><button onclick="decrementCount(${product.id})">❤️</button></div>
                             </div>
                             <div class="shopping-cart-total-price-item">
                                 <h4>Cost:</h4>
