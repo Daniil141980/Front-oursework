@@ -46,7 +46,7 @@ function addToCart(id) {
     let product;
     let mapProduct = JSON.parse(sessionStorage.getItem("1") || "{}")
     if (mapProduct[id] === undefined) {
-        product = {id: id, name: data[id].name, price: data[id].price, image: data[id].image, quantity: 1}
+        product = {id: id, name: data[id].name, price: data[id].price, image: data[id].image, quantity: 1, sale: data[id].sale}
         mapProduct[id] = product
         sessionStorage.setItem("1", JSON.stringify(mapProduct))
     } else {
@@ -68,7 +68,7 @@ function addToFavorites(id) {
     let product;
     let mapProduct = JSON.parse(sessionStorage.getItem("2") || "{}")
     if (mapProduct[id] === undefined) {
-        product = {id: id, name: data[id].name, price: data[id].price, image: data[id].image, quantity: 1}
+        product = {id: id, name: data[id].name, price: data[id].price, image: data[id].image, quantity: 1, sale: data[id].sale}
         mapProduct[id] = product
         sessionStorage.setItem("2", JSON.stringify(mapProduct))
     } else {

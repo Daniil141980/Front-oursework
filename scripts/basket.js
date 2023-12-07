@@ -21,7 +21,7 @@ function update() {
                             </div>
                             <div class="shopping-cart-total-price-item">
                                 <h4>Cost:</h4>
-                                <h4 class="shopping-cart-item-price">$${product.quantity * product.price}</h4>
+                                <h4 class="shopping-cart-item-price">${product.quantity * product.price} ₽</h4>
                             </div>
                         </div>
                     </div>`;
@@ -29,7 +29,7 @@ function update() {
 
     if (totalCost !== 0) {
         out += `<div class="cart-total-cost">
-                <h4>Total:<br/>$${totalCost}</h4>
+                <h4>Total:<br/>${totalCost} ₽</h4>
             </div>`
     }
 
@@ -86,7 +86,7 @@ fetch("./data/products.json")
                             </div>
                             <div class="shopping-cart-total-price-item">
                                 <h4>Cost:</h4>
-                                <h4 class="shopping-cart-item-price">$${product.quantity * product.price}</h4>
+                                <h4 class="shopping-cart-item-price">${product.quantity * product.price} ₽</h4>
                             </div>
                         </div>
                     </div>`;
@@ -94,7 +94,7 @@ fetch("./data/products.json")
 
         if (totalCost !== 0) {
             out += `<div class="cart-total-cost">
-                <h4>Total:<br/>$${totalCost}</h4>
+                <h4>Total:<br/>${totalCost} ₽</h4>
             </div>`
         }
 

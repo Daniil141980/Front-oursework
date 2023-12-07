@@ -16,8 +16,8 @@ function update() {
                                 <div id="btn5"><button onclick="decrementCount(${product.id})">❤️</button></div>
                             </div>
                             <div class="shopping-cart-total-price-item">
-                                <h4>Cost:</h4>
-                                <h4 class="shopping-cart-item-price">$${product.quantity * product.price}</h4>
+                                <h4>Скидка будет:</h4>
+                                <h4 class="shopping-cart-item-price">${product.sale}</h4>
                             </div>
                         </div>
                     </div>`;
@@ -65,8 +65,8 @@ fetch("./data/products.json")
                                 <div id="btn5"><button onclick="decrementCount(${product.id})">❤️</button></div>
                             </div>
                             <div class="shopping-cart-total-price-item">
-                                <h4>Cost:</h4>
-                                <h4 class="shopping-cart-item-price">$${product.quantity * product.price}</h4>
+                                <h4>Скидка будет:</h4>
+                                <h4 class="shopping-cart-item-price">${product.sale}</h4>
                             </div>
                         </div>
                     </div>`;

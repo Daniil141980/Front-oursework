@@ -3,48 +3,56 @@
     "id": 1,
     "image": "./image/dota_1.jpg",
     "price": "2540",
-    "name": "Dota 2"
+    "name": "Dota 2",
+    "sale": "31.12.23"
   },
   {
     "id": 2,
     "image": "./image/manor.jpg",
     "price": "1060",
-    "name": "Manor Lords"
+    "name": "Manor Lords",
+    "sale": "31.12.23"
   },
   {
     "id": 3,
     "image": "./image/stray.jpg",
     "price": "950",
-    "name": "Stray"
+    "name": "Stray",
+    "sale": "31.12.23"
   },
   {
     "id": 4,
     "image": "./image/zero.jpg",
     "price": "2264",
-    "name": "Subnautica"
+    "name": "Subnautica",
+    "sale": "31.12.23"
   },
   {
     "id": 5,
     "image": "./image/terraria.jpg",
     "price": "345",
-    "name": "Terraria"
+    "name": "Terraria",
+    "sale": "31.12.23"
   },
   {
     "id": 6,
     "image": "./image/war.jpg",
     "price": "1399",
-    "name": "World War"
+    "name": "World War",
+    "sale": "31.12.23"
   },
   {
     "id": 7,
     "image": "./image/raft.jpg",
     "price": "415",
-    "name": "Raft"
+    "name": "Raft",
+    "sale": "31.12.23"
   },
   {
     "id": 8,
     "image": "./image/grim.jpg",
     "price": "1365",
-    "name": "Grim Dawn"
+    "name": "Grim Dawn",
+    "sale": "31.12.23"
   }
 ]
