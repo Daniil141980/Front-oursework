@@ -11,7 +11,7 @@ function update() {
         totalCost += product.quantity * product.price;
 
         out += `<div class="shopping-cart-item">
-                        <img src=${product.image} width="240px" height="135px" class="shopping-cart-item-image">
+                        <a href="game_page.html?id=${product.id}"><img src=${product.image} width="240px" height="135px" class="shopping-cart-item-image"></a>
                         <div class="shopping-cart-data">
                             <h3 class="shopping-cart-item-name">${product.name}</h3>
                             <div class="shopping-cart-counter">
@@ -76,7 +76,7 @@ fetch("./data/products.json")
             totalCost += product.quantity * product.price;
 
             out += `<div class="shopping-cart-item">
-                        <img src=${product.image} width="240px" height="135px" class="shopping-cart-item-image">
+                        <a href="game_page.html?id=${product.id}"><img src=${product.image} width="240px" height="135px" class="shopping-cart-item-image"></a>
                         <div class="shopping-cart-data">
                             <h3 class="shopping-cart-item-name">${product.name}</h3>
                             <div class="shopping-cart-counter">
