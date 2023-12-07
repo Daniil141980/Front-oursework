@@ -22,7 +22,7 @@ function update() {
                                     <p class="card-text text-center">${product.price} р.</p>
                                     <div id="btn3" onclick="addToCart(${product.id - 1})"><a><button>В корзину</button></a></div>
                                     <div class="btn3" onclick="addToFavorites(${product.id - 1})">
-                                        <span style="font-size: 30px; cursor: pointer❤️</span>
+                                        <span style="font-size: 30px; cursor: pointer;">❤</span>
                                     </div>
                                 </div>
                             </div>
@@ -30,7 +30,7 @@ function update() {
 
         if (cnt % 4 === 0) {
             if (i !== data.length) {
-                out += `</div><div class="row" style="margin-top: 50px;">`
+                out += `</div><div class="row" style="margin-top: 0px;">`
             }
         }
 
@@ -71,7 +71,9 @@ function addToFavorites(id) {
         product = {id: id, name: data[id].name, price: data[id].price, image: data[id].image, quantity: 1}
         mapProduct[id] = product
         sessionStorage.setItem("2", JSON.stringify(mapProduct))
-
+    } else {
+        delete mapProduct[id]
+        sessionStorage.setItem("2", JSON.stringify(mapProduct))
     }
 
     // updating count of products in header
@@ -80,12 +82,9 @@ function addToFavorites(id) {
     if (sessionStorage.getItem("2") !== null) {
         let map = JSON.parse(sessionStorage.getItem("2"))
         total = Object.values(map).reduce((previousValue, currentValue) => previousValue + currentValue.quantity,0)
-
     }
     placeholder.innerHTML = `${total}`;
-
 }
-
 
 document.addEventListener('DOMContentLoaded', function () {
     const dropdown = document.getElementById('dropdown');
@@ -172,7 +171,7 @@ fetch("./data/products.json")
                                     <p class="card-text text-center">${product.price} р.</p>
                                     <div id="btn3" onclick="addToCart(${product.id-1})"><a><button>В корзину</button></a></div>
                                     <div class="btn3" onclick="addToFavorites(${product.id - 1})">
-                                        <span style="font-size: 30px; cursor: pointer;">❤️</span>
+                                        <span style="font-size: 30px; cursor: pointer;">❤</span>
                                     </div>
                                 </div>
                             </div>
